@@ -29,7 +29,7 @@ export const projects: Project[] = [
   description:
     "RentNeo is a full-stack equipment rental marketplace that allows people to rent equipment instead of purchasing it. Equipment owners can list their construction, photography, vehicle, agricultural, electronics, and event equipment, while customers can discover available items, book rentals, and make payments online. The platform includes dedicated dashboards for customers, owners, and administrators, with listing approval, rental management, analytics, and secure payment processing.",
 
-  image: "/projects/rentneo.png",
+  image: "/projects/rentneo.PNG",
 
   technologies: [
     "Next.js 16",
