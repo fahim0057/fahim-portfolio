@@ -17,6 +17,71 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+
+{
+  slug: "rentneo",
+  title: "RentNeo",
+  category: "Full-Stack Equipment Rental Marketplace",
+
+  summary:
+    "A full-stack equipment rental marketplace connecting equipment owners with customers through secure bookings and online payments.",
+
+  description:
+    "RentNeo is a full-stack equipment rental marketplace that allows people to rent equipment instead of purchasing it. Equipment owners can list their construction, photography, vehicle, agricultural, electronics, and event equipment, while customers can discover available items, book rentals, and make payments online. The platform includes dedicated dashboards for customers, owners, and administrators, with listing approval, rental management, analytics, and secure payment processing.",
+
+  image: "/projects/rentneo.png",
+
+  technologies: [
+    "Next.js 16",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "Better Auth",
+    "MongoDB",
+    "Express 5",
+    "Stripe",
+    "Zod",
+    "JWT",
+  ],
+
+  features: [
+    "Browse and search equipment with category, location, price, availability, and rental-type filters.",
+    "Detailed equipment pages with descriptions, condition, owner information, rental terms, and reviews.",
+    "Email/password and Google authentication using Better Auth.",
+    "Three user roles: Customer, Owner, and Admin, each with dedicated dashboard functionality.",
+    "Book equipment using pickup dates, return dates, and quantities with live price estimates.",
+    "Secure online payments through Stripe Checkout.",
+    "Customer dashboard with rental history, payment status, favorites, and reviews.",
+    "Owner dashboard for equipment listings, rental requests, earnings, and analytics.",
+    "Admin dashboard for listing approvals, user management, booking oversight, and platform analytics.",
+    "Equipment listing image uploads with an admin approval workflow.",
+    "Responsive interface with light and dark themes, notifications, and loading states.",
+  ],
+
+  challenges: [
+    "Implementing role-based authorization for customers, owners, and administrators.",
+    "Maintaining secure authentication between the Next.js client and separate Express API using JWT verification.",
+    "Calculating rental prices on the server rather than trusting values submitted by the browser.",
+    "Managing equipment availability across overlapping bookings and temporary unpaid reservations.",
+    "Implementing reliable Stripe webhooks with signature verification and idempotency.",
+    "Preventing unauthorized access to owner and administrator operations.",
+  ],
+
+  futureImprovements: [
+    "Introduce real-time equipment availability updates.",
+    "Add email and SMS notifications for booking confirmations and rental status changes.",
+    "Improve equipment discovery with interactive map-based location search.",
+    "Expand automated integration and end-to-end testing for booking and payment workflows.",
+  ],
+
+  coverGradient:
+    "linear-gradient(135deg, #264A70, #172D48, #0B1220)",
+
+  liveUrl: "https://rentneo-client.vercel.app/",
+
+  githubUrl: "https://github.com/fahim0057/rentneo-client",
+},
+
   {
     slug: "arc-en-ciel",
     title: "Arc-en-ciel",
